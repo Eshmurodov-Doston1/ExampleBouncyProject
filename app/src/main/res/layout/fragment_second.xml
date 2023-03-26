@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pagerView.SecondFragment">
+
+    <com.factor.bouncy.BouncyRecyclerView
+        android:id="@+id/rv_bounds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:spanCount="3"
+        tools:listitem="@layout/item_rv"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:recyclerview_fling_animation_size=".7"
+        app:recyclerview_overscroll_animation_size=".7"
+        app:recyclerview_damping_ratio="DAMPING_RATIO_LOW_BOUNCY"
+        app:recyclerview_stiffness="STIFFNESS_MEDIUM"
+        app:allow_drag_reorder="true"
+        app:allow_item_swipe="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
